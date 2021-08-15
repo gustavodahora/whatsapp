@@ -8,6 +8,7 @@
     tools:context=".Contacts">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/green"
@@ -19,12 +20,12 @@
             android:id="@+id/arrow_return"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/arrow_return"
             android:src="@drawable/ic_baseline_arrow_back_24"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="10dp"
-            android:contentDescription="@string/arrow_return" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -62,24 +63,33 @@
             android:layout_height="30dp"
             android:layout_marginEnd="10dp"
             android:contentDescription="@string/menu_dropdown"
-            app:tint="@color/white"
             android:src="@drawable/ic_baseline_search_24"
             app:layout_constraintBottom_toBottomOf="@+id/arrow_return"
             app:layout_constraintEnd_toStartOf="@id/img_menu"
-            app:layout_constraintTop_toTopOf="@+id/arrow_return" />
+            app:layout_constraintTop_toTopOf="@+id/arrow_return"
+            app:tint="@color/white" />
 
         <ImageView
             android:id="@+id/img_menu"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginEnd="10dp"
-            app:tint="@color/white"
             android:contentDescription="@string/menu_dropdown"
             android:src="@drawable/ic_baseline_more_vert_24"
             app:layout_constraintBottom_toBottomOf="@+id/arrow_return"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/arrow_return" />
+            app:layout_constraintTop_toTopOf="@+id/arrow_return"
+            app:tint="@color/white" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_contacts"
+        android:layout_width="409dp"
+        android:layout_height="669dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

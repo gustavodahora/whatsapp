@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Whatsapp</string>
+    <string name="app_name">WhatsApp</string>
+    <string name="menu_dropdown">Menu dropdown</string>
+    <string name="camera_icon">Camera Icon</string>
+    <string name="conversations">CONVERSAS</string>
+    <string name="calls">CHAMADAS</string>
+    <string name="status">STATUS</string>
+    <string name="conversation_button">Conversation button</string>
 </resources>

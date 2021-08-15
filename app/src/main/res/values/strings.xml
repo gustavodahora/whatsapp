@@ -47,5 +47,7 @@
     <string name="contatos">Contatos</string>
     <string name="contacts_number">38 contatos</string>
     <string name="arrow_return">Arrow return</string>
+    <string name="setup">Configurações</string>
+    <string name="pain_phraise">Aqueles que não entendem a dor...</string>
 
 </resources>

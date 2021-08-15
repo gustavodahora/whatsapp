@@ -22,6 +22,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private FloatingActionButton fltContacts;
+    private ImageView setup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         fltContacts = findViewById(R.id.floatingActionButton);
+        setup = findViewById(R.id.img_menu);
 
         RecyclerView rvMain = findViewById(R.id.rv_main);
 
@@ -55,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         fltContacts.setOnClickListener(view -> {
             startActivity(new Intent(MainActivity.this, Contacts.class));
+        });
+
+        setup.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, Setup.class));
         });
     }
 

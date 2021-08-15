@@ -19,6 +19,7 @@ import java.util.List;
 public class Contacts extends AppCompatActivity {
 
     private ImageView arrowReturn;
+    private ImageView setup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class Contacts extends AppCompatActivity {
         setContentView(R.layout.activity_contacts);
 
         arrowReturn = findViewById(R.id.arrow_return);
+        setup = findViewById(R.id.img_menu);
 
         RecyclerView rvContacts = findViewById(R.id.rv_contacts);
 
@@ -53,6 +55,10 @@ public class Contacts extends AppCompatActivity {
         super.onStart();
         arrowReturn.setOnClickListener(view -> {
             startActivity(new Intent(Contacts.this, MainActivity.class));
+        });
+
+        setup.setOnClickListener(view -> {
+            startActivity(new Intent(Contacts.this, Setup.class));
         });
     }
 

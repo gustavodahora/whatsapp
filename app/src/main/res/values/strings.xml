@@ -7,7 +7,7 @@
     <string name="status">STATUS</string>
     <string name="conversation_button">Conversation button</string>
 
-<!--    Person names -->
+    <!--    Person names -->
     <string name="txt_person1">Dallai</string>
     <string name="txt_person2">Samir</string>
     <string name="txt_person3">Cezin</string>
@@ -44,5 +44,8 @@
     <string name="time_person9">01:24</string>
     <string name="time_person10">04:44</string>
     <string name="image_person">Image Person</string>
+    <string name="contatos">Contatos</string>
+    <string name="contacts_number">38 contatos</string>
+    <string name="arrow_return">Arrow return</string>
 
 </resources>

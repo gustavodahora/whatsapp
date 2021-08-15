@@ -14,15 +14,21 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private FloatingActionButton fltContacts;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        fltContacts = findViewById(R.id.floatingActionButton);
 
         RecyclerView rvMain = findViewById(R.id.rv_main);
 
@@ -44,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
         rvMain.setAdapter(adapter);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        fltContacts.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, Contacts.class));
+        });
+    }
 
     public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder> {
         private final List<MainItem> mainItems;

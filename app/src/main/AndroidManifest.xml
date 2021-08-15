@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Whatsapp">
         <activity
+            android:name=".Contacts"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

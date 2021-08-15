@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/green"
@@ -59,8 +60,8 @@
             android:contentDescription="@string/camera_icon"
             android:src="@drawable/ic_baseline_camera_alt_24"
             android:text="@string/app_name"
-            app:layout_constraintEnd_toStartOf="@id/conversations"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/conversations"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/app_name" />
 
@@ -68,53 +69,52 @@
             android:id="@+id/conversations"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/camera_icon"
             android:text="@string/conversations"
             android:textColor="@color/green_light"
-            app:layout_constraintEnd_toStartOf="@id/status"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/camera"
-            app:layout_constraintTop_toTopOf="@id/camera"
             app:layout_constraintBottom_toBottomOf="@id/camera"
-            android:contentDescription="@string/camera_icon" />
+            app:layout_constraintEnd_toStartOf="@id/status"
+            app:layout_constraintStart_toEndOf="@id/camera"
+            app:layout_constraintTop_toTopOf="@id/camera" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:background="@color/green_light"
-            app:layout_constraintStart_toStartOf="@id/conversations"
-            app:layout_constraintEnd_toEndOf="@id/conversations"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toEndOf="@id/conversations"
+            app:layout_constraintStart_toStartOf="@id/conversations" />
 
 
         <TextView
             android:id="@+id/status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/camera_icon"
             android:text="@string/status"
             android:textColor="@color/green_gray"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/conversations"
-            app:layout_constraintEnd_toStartOf="@id/calls"
-            app:layout_constraintTop_toTopOf="@id/camera"
             app:layout_constraintBottom_toBottomOf="@id/camera"
-            android:contentDescription="@string/camera_icon" />
+            app:layout_constraintEnd_toStartOf="@id/calls"
+            app:layout_constraintStart_toEndOf="@id/conversations"
+            app:layout_constraintTop_toTopOf="@id/camera" />
 
         <TextView
             android:id="@+id/calls"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/camera_icon"
             android:text="@string/calls"
             android:textColor="@color/green_gray"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/status"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/camera"
             app:layout_constraintBottom_toBottomOf="@id/camera"
-            android:contentDescription="@string/camera_icon" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/status"
+            app:layout_constraintTop_toTopOf="@id/camera" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -132,5 +132,16 @@
         app:srcCompat="@android:drawable/ic_input_add"
         android:contentDescription="@string/conversation_button"
         android:focusable="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:listitem="@layout/chat_item"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

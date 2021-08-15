@@ -6,4 +6,43 @@
     <string name="calls">CHAMADAS</string>
     <string name="status">STATUS</string>
     <string name="conversation_button">Conversation button</string>
+
+<!--    Person names -->
+    <string name="txt_person1">Dallai</string>
+    <string name="txt_person2">Samir</string>
+    <string name="txt_person3">Cezin</string>
+    <string name="txt_person4">Balkry01</string>
+    <string name="txt_person5">RetroGuy</string>
+    <string name="txt_person6">Fernando</string>
+    <string name="txt_person7">Lais</string>
+    <string name="txt_person8">Lucas</string>
+    <string name="txt_person9">Zair</string>
+    <string name="txt_person10">Sergio</string>
+
+    <!-- Last chat -->
+    <string name="last_person1">Tranquilo</string>
+    <string name="last_person2">De boa</string>
+    <string name="last_person3">Agora não</string>
+    <string name="last_person4">Pode ser?</string>
+    <string name="last_person5">Bachelor of Engineering in Electronics</string>
+    <string name="last_person6">Quando?</string>
+    <string name="last_person7">Pode ser no dia 15/08/2021</string>
+    <string name="last_person8">Domingo é uma boa</string>
+    <string name="last_person9">Podemos começar</string>
+    <string name="last_person10">Claro!</string>
+
+
+    <!--    time chat -->
+    <string name="time_person1">22:10</string>
+    <string name="time_person2">10:10</string>
+    <string name="time_person3">14:12</string>
+    <string name="time_person4">13:55</string>
+    <string name="time_person5">16:20</string>
+    <string name="time_person6">08:10</string>
+    <string name="time_person7">19:09</string>
+    <string name="time_person8">21:42</string>
+    <string name="time_person9">01:24</string>
+    <string name="time_person10">04:44</string>
+    <string name="image_person">Image Person</string>
+
 </resources>

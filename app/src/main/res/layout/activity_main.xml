@@ -83,9 +83,11 @@
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:background="@color/green_light"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/conversations"
-            app:layout_constraintStart_toStartOf="@id/conversations" />
+            app:layout_constraintEnd_toStartOf="@+id/status"
+            app:layout_constraintStart_toEndOf="@+id/camera" />
 
 
         <TextView

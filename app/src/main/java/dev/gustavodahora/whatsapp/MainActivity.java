@@ -3,6 +3,7 @@ package dev.gustavodahora.whatsapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.menu.MenuView;
+import androidx.constraintlayout.widget.Constraints;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         mainItems.add(new MainItem(8, R.drawable.person8, R.string.txt_person8, R.string.last_person8, false, R.string.time_person8));
         mainItems.add(new MainItem(9, R.drawable.person9, R.string.txt_person9, R.string.last_person9, false, R.string.time_person9));
         mainItems.add(new MainItem(10, R.drawable.person10, R.string.txt_person10, R.string.last_person10, false, R.string.time_person10));
+        mainItems.add(new MainItem(11, R.drawable.person3, R.string.txt_person11, R.string.last_person10, false, R.string.time_person10));
 
         rvMain.setLayoutManager(new LinearLayoutManager(this));
         MainAdapter adapter = new MainAdapter(mainItems);
@@ -101,12 +103,16 @@ public class MainActivity extends AppCompatActivity {
                 TextView namePerson = itemView.findViewById(R.id.txt_person_name);
                 TextView lastPerson = itemView.findViewById(R.id.txt_last_person);
                 TextView timePerson = itemView.findViewById(R.id.txt_time_person);
+                View full = itemView.findViewById(R.id.layout_cns);
 
                 imagePerson.setImageResource(item.getImageId());
                 namePerson.setText(item.getNameId());
                 lastPerson.setText(item.getLastChatId());
                 timePerson.setText(item.getTime());
 
+                full.setOnClickListener(view -> {
+                    startActivity(new Intent(MainActivity.this, Conversation.class));
+                });
             }
         }
     }

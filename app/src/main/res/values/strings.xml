@@ -50,5 +50,18 @@
     <string name="setup">Configurações</string>
     <string name="pain_phraise">Aqueles que não entendem a dor...</string>
     <string name="qrcode_icon">QrCode Icon</string>
+    <string name="account">Conta</string>
+    <string name="privacy">Privacidade, segurança, mudar número</string>
+    <string name="chat">Conversas</string>
+    <string name="theme">Tema, papel de parede, histórico de conversas</string>
+    <string name="notification">Notificações</string>
+    <string name="messages">Mensagens, grupos, chamadas</string>
+    <string name="data">Armazenamento e dados</string>
+    <string name="network">Uso de rede, download automático</string>
+    <string name="help">Ajuda</string>
+    <string name="central">Central de ajuda, fale conosco, política de privacidade</string>
+    <string name="friend">Convidar um amigo</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="from">from</string>
 
 </resources>

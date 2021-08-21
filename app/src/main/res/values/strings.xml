@@ -65,5 +65,6 @@
     <string name="from">from</string>
     <string name="txt_person11">norosh</string>
     <string name="online">online</string>
+    <string name="message">Digite uma mensagem</string>
 
 </resources>

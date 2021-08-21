@@ -9,12 +9,14 @@ import android.widget.ImageView;
 public class Conversation extends AppCompatActivity {
 
     private ImageView btnReturn;
+    private ImageView btnSetup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conversation);
         btnReturn = findViewById(R.id.arrow_return);
+        btnSetup = findViewById(R.id.img_menu);
     }
 
     @Override
@@ -22,6 +24,9 @@ public class Conversation extends AppCompatActivity {
         super.onStart();
         btnReturn.setOnClickListener(view -> {
             startActivity(new Intent (Conversation.this, MainActivity.class));
+        });
+        btnSetup.setOnClickListener(view -> {
+            startActivity(new Intent (Conversation.this, Setup.class));
         });
     }
 }

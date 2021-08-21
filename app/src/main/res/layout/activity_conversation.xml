@@ -71,13 +71,13 @@
             android:id="@+id/img_video"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="12dp"
             android:contentDescription="@string/menu_dropdown"
             android:src="@drawable/ic_baseline_call_24"
             app:layout_constraintBottom_toBottomOf="@+id/arrow_return"
             app:layout_constraintEnd_toStartOf="@id/img_menu"
             app:layout_constraintTop_toTopOf="@+id/arrow_return"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"
             app:tint="@color/white" />
 
         <ImageView
@@ -105,6 +105,102 @@
             app:layout_constraintTop_toTopOf="@+id/arrow_return"
             app:tint="@color/white" />
 
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+        app:layout_constraintBottom_toTopOf="@id/message">
+
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/round_shp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mic"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_baseline_emoji_emotions_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginVertical="2dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:hint="@string/message"
+            android:textColorHighlight="@color/green_light"
+            android:textColorHint="@color/green_gray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/emoji"
+            app:layout_constraintEnd_toStartOf="@+id/attach"
+            app:layout_constraintStart_toEndOf="@id/emoji"
+            app:layout_constraintTop_toTopOf="@id/emoji" />
+
+        <ImageView
+            android:id="@+id/attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_attach_file_24"
+            app:layout_constraintBottom_toBottomOf="@id/emoji"
+            app:layout_constraintEnd_toStartOf="@id/camera"
+            app:layout_constraintTop_toTopOf="@id/emoji"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_camera_alt_24"
+            app:layout_constraintBottom_toBottomOf="@id/emoji"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/emoji" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/mic"
+        android:backgroundTint="@color/green_light"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/ic_baseline_mic_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/message"
+        android:orientation="horizontal"
+        android:background="@drawable/round_shp_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

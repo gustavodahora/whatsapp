@@ -76,7 +76,7 @@
             android:id="@+id/person_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="8dp"
             android:text="@string/txt_person6"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -102,9 +102,10 @@
         android:src="@drawable/ic_baseline_qr_code_24"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
         app:layout_constraintStart_toEndOf="@id/constraintLayout3"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.47"
+        android:contentDescription="@string/qrcode_icon" />
 
     <View
         android:layout_width="match_parent"
@@ -114,8 +115,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_person" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
